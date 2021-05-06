@@ -1,9 +1,6 @@
 .container {
-    width: 1000px;
-    height: 800px;
-    margin-bottom: 200px;
+    max-width: 1920px;
+    height: 120vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 20px auto;
 }
