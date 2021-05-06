@@ -343,97 +343,102 @@
     width: 20rem;
     height: 20rem;
     position: relative;
-    border: solid green;
     &__spin {
+        display: block;
+        position: absolute;
+        margin: 2rem;
+        width: 80%;
+        height: 80%;
         border-radius: 50%;
-        border: 7px solid transparent;
+        border: 8px solid transparent;
         border-top-color: $third-color;
-        animation: spin 2s linear 10s;
+        animation: spin 2s linear infinite;
         &::before {
             content: '';
             position: absolute;
-            top: 5px;
-            left: 5px;
-            right: 5px;
-            bottom: 5px;
+            top: .2rem;
+            left: .2rem;
+            right: .2rem;
+            bottom: .2rem;
             border-radius: 50%;
             border: 8px solid transparent;
             border-top-color: #5085a5;
-            animation: spin 3s linear 10s;
+            animation: spin 3s linear infinite;
         }
         &::after {
             content: '';
             position: absolute;
-            top: 15px;
-            left: 15px;
-            right: 15px;
-            bottom: 15px;
+            top: .9rem;
+            left: .9rem;
+            right: .9rem;
+            bottom: .9rem;
             border-radius: 50%;
             border: 8px solid transparent;
             border-top-color: #8fc1e3;
-            animation: spin 1.5s linear 10s;
+            animation: spin 1.5s linear infinite;
         }
-    }
-    
-    &__classic {
-         div {
-        transform-origin: 24rem 18rem;
-        animation: anim10 1.2s linear infinite;
-        img {
-            position: absolute;
-            top: 24rem;
-            left: 50%;
-            height: 7rem;
-            width: 7rem;
+    }  
+    &__flatware {
+        width: 100%;
+        height: 100%;
+        div {     
+            transform-origin: 10rem 10rem;
+            animation: anim10 1.2s linear infinite;
+            img {
+                position: absolute;
+                top: 13rem;
+                left: 8rem;
+                height: 4rem;
+                width: 4rem;
+            }
+            &:nth-child(1) {
+                transform: rotate(0);
+                animation-delay: -1.1s;
+            }
+            &:nth-child(2) {
+                transform: rotate(30deg);
+                animation-delay: -1s;
+            }
+            &:nth-child(3) {
+                transform: rotate(60deg);
+                animation-delay: -.9s;
+            }
+            &:nth-child(4) {
+                transform: rotate(90deg);
+                animation-delay: -.8s;
+            }
+            &:nth-child(5) {
+                transform: rotate(120deg);
+                animation-delay: -.7s;
+            }
+            &:nth-child(6) {
+                transform: rotate(150deg);
+                animation-delay: -.6s;
+            }
+            &:nth-child(7) {
+                transform: rotate(180deg);
+                animation-delay: -.5s;
+            }
+            &:nth-child(8) {
+                transform: rotate(210deg);
+                animation-delay: -.4s;
+            }
+            &:nth-child(9) {
+                transform: rotate(240deg);
+                animation-delay: -.3s;
+            }
+            &:nth-child(10) {
+                transform: rotate(270deg);
+                animation-delay: -.2s;
+            }
+            &:nth-child(11) {
+                transform: rotate(300deg);
+                animation-delay: -.1s;
+            }
+            &:nth-child(12) {
+                transform: rotate(330deg);
+                animation-delay: 0s;
+            }
         }
-        &:nth-child(1) {
-            transform: rotate(0);
-            animation-delay: -1.1s;
-        }
-        &:nth-child(2) {
-            transform: rotate(30deg);
-            animation-delay: -1s;
-        }
-        &:nth-child(3) {
-            transform: rotate(60deg);
-            animation-delay: -.9s;
-        }
-        &:nth-child(4) {
-            transform: rotate(90deg);
-            animation-delay: -.8s;
-        }
-        &:nth-child(5) {
-            transform: rotate(120deg);
-            animation-delay: -.7s;
-        }
-        &:nth-child(6) {
-            transform: rotate(150deg);
-            animation-delay: -.6s;
-        }
-        &:nth-child(7) {
-            transform: rotate(180deg);
-            animation-delay: -.5s;
-        }
-        &:nth-child(8) {
-            transform: rotate(210deg);
-            animation-delay: -.4s;
-        }
-        &:nth-child(9) {
-            transform: rotate(240deg);
-            animation-delay: -.3s;
-        }
-        &:nth-child(10) {
-            transform: rotate(270deg);
-            animation-delay: -.2s;
-        }
-        &:nth-child(11) {
-            transform: rotate(300deg);
-            animation-delay: -.1s;
-        }
-        &:nth-child(12) {
-            transform: rotate(330deg);
-            animation-delay: 0s;
-        }
-    }
     }
 }

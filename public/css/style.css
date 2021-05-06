@@ -121,7 +121,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 120vh;
 }
 
 *, ::before, ::after {
@@ -469,100 +468,109 @@ body {
   width: 20rem;
   height: 20rem;
   position: relative;
-  border: solid green;
 }
 .anim13__spin {
+  display: block;
+  position: absolute;
+  margin: 2rem;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
-  border: 7px solid transparent;
+  border: 8px solid transparent;
   border-top-color: #31708e;
-  animation: spin 2s linear 10s;
+  animation: spin 2s linear infinite;
 }
 .anim13__spin::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
+  top: 0.2rem;
+  left: 0.2rem;
+  right: 0.2rem;
+  bottom: 0.2rem;
   border-radius: 50%;
   border: 8px solid transparent;
   border-top-color: #5085a5;
-  animation: spin 3s linear 10s;
+  animation: spin 3s linear infinite;
 }
 .anim13__spin::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+  top: 0.9rem;
+  left: 0.9rem;
+  right: 0.9rem;
+  bottom: 0.9rem;
   border-radius: 50%;
   border: 8px solid transparent;
   border-top-color: #8fc1e3;
-  animation: spin 1.5s linear 10s;
+  animation: spin 1.5s linear infinite;
 }
-.anim13__classic div {
-  transform-origin: 24rem 18rem;
+.anim13__flatware {
+  width: 100%;
+  height: 100%;
+}
+.anim13__flatware div {
+  transform-origin: 10rem 10rem;
   animation: anim10 1.2s linear infinite;
 }
-.anim13__classic div img {
+.anim13__flatware div img {
   position: absolute;
-  top: 24rem;
-  left: 50%;
-  height: 7rem;
-  width: 7rem;
+  top: 13rem;
+  left: 8rem;
+  height: 4rem;
+  width: 4rem;
 }
-.anim13__classic div:nth-child(1) {
+.anim13__flatware div:nth-child(1) {
   transform: rotate(0);
   animation-delay: -1.1s;
 }
-.anim13__classic div:nth-child(2) {
+.anim13__flatware div:nth-child(2) {
   transform: rotate(30deg);
   animation-delay: -1s;
 }
-.anim13__classic div:nth-child(3) {
+.anim13__flatware div:nth-child(3) {
   transform: rotate(60deg);
   animation-delay: -0.9s;
 }
-.anim13__classic div:nth-child(4) {
+.anim13__flatware div:nth-child(4) {
   transform: rotate(90deg);
   animation-delay: -0.8s;
 }
-.anim13__classic div:nth-child(5) {
+.anim13__flatware div:nth-child(5) {
   transform: rotate(120deg);
   animation-delay: -0.7s;
 }
-.anim13__classic div:nth-child(6) {
+.anim13__flatware div:nth-child(6) {
   transform: rotate(150deg);
   animation-delay: -0.6s;
 }
-.anim13__classic div:nth-child(7) {
+.anim13__flatware div:nth-child(7) {
   transform: rotate(180deg);
   animation-delay: -0.5s;
 }
-.anim13__classic div:nth-child(8) {
+.anim13__flatware div:nth-child(8) {
   transform: rotate(210deg);
   animation-delay: -0.4s;
 }
-.anim13__classic div:nth-child(9) {
+.anim13__flatware div:nth-child(9) {
   transform: rotate(240deg);
   animation-delay: -0.3s;
 }
-.anim13__classic div:nth-child(10) {
+.anim13__flatware div:nth-child(10) {
   transform: rotate(270deg);
   animation-delay: -0.2s;
 }
-.anim13__classic div:nth-child(11) {
+.anim13__flatware div:nth-child(11) {
   transform: rotate(300deg);
   animation-delay: -0.1s;
 }
-.anim13__classic div:nth-child(12) {
+.anim13__flatware div:nth-child(12) {
   transform: rotate(330deg);
   animation-delay: 0s;
 }
 
 .container {
   max-width: 1920px;
+  min-width: 320px;
   height: 120vh;
   display: flex;
   margin: 20px auto;
@@ -581,7 +589,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*animation: fadeOut 3s forwards;*/
+  animation: fadeOut 3s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
