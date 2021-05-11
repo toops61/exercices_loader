@@ -131,3 +131,31 @@
        visibility: hidden;
     }
 }
+
+@keyframes laBoule {
+    0%{
+       transform: rotate(0) translate(0);
+    
+    }
+    15%{
+        transform: rotate(360deg) translate(0);
+    }
+    30%{
+        transform: rotate(0) translate(0); 
+    }
+    40%{
+        transform: translate(0, 139px);
+    }
+    50%{
+        transform: translate(50px, 50px);
+    }
+    60%{
+        transform: translate(80px, 139px);
+    }
+    80%{
+        transform: translate(110px, 80px);
+    }
+    100%{
+        transform: translate(139px, 139px);
+    }
+}

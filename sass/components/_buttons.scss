@@ -336,3 +336,23 @@
     background: $primary-color;
     animation: movepan 1.2s infinite ease-in-out;
 }
+
+/* Animation 13 */
+/*
+.animTsuki {
+    border: solid green;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &-ball {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        text-align: center;
+        background-color: hotpink;
+        animation: laBoule 5s ease-in-out forwards;
+
+    }
+}
+*/
