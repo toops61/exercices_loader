@@ -22,7 +22,7 @@
     transform: scaleY(0.4);
   }
   20% {
-    transform: scaleY(1.5);
+    transform: scaleY(1);
   }
 }
 @keyframes threePointsGrow {
@@ -121,6 +121,11 @@
 body {
   margin: 0;
   padding: 0;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
 }
 
 *, ::before, ::after {
@@ -128,18 +133,8 @@ body {
 }
 
 .anim {
-  width: 40rem;
-  height: 40rem;
-  border: 5px solid #333;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.anim--grand {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   border: 5px solid #333;
   margin: 20px;
   display: flex;
@@ -149,9 +144,9 @@ body {
 
 /* Animation 1 */
 .anim1 {
-  width: 60%;
-  height: 60%;
-  border: 20px solid gray;
+  width: 64px;
+  height: 64px;
+  border: 6px solid gray;
   border-color: #333 transparent #333 transparent;
   border-radius: 50%;
   animation: tourne 1.2s linear infinite;
@@ -160,8 +155,8 @@ body {
 /* Animation 2 */
 .anim2 {
   position: relative;
-  width: 60%;
-  height: 60%;
+  width: 40px;
+  height: 40px;
   margin: 0 auto;
 }
 
@@ -181,8 +176,8 @@ body {
 
 /* Animation 3 */
 .anim3 {
-  width: 40%;
-  height: 40%;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,8 +185,8 @@ body {
 .anim3 > div {
   background: #333;
   height: 100%;
-  width: 10%;
-  margin: 0 2%;
+  width: 6px;
+  margin: 0 2px;
   animation: etire 1.2s infinite ease-in-out;
 }
 .anim3 .rect2 {
@@ -210,8 +205,8 @@ body {
 /* Animation 4 */
 .anim4 > div {
   background: #333;
-  height: 5rem;
-  width: 5rem;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   display: inline-block;
   animation: threePointsGrow 1.2s infinite ease-in-out alternate;
@@ -235,7 +230,7 @@ body {
 .lettre {
   color: #484848;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 6rem;
+  font-size: 30px;
   animation: flash 1.4s linear infinite;
 }
 .lettre:nth-child(1) {
@@ -259,6 +254,12 @@ body {
 .lettre:nth-child(7) {
   animation-delay: 0.7s;
 }
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(9) {
+  animation-delay: 0.9s;
+}
 
 /* Animation 6 */
 .animate {
@@ -269,8 +270,8 @@ body {
 
 /* Animation 7 */
 .spinFast {
-  width: 8rem;
-  height: 8rem;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background: linear-gradient(45deg, #ff9900, red);
   border: 1px solid #333;
@@ -289,10 +290,10 @@ body {
 .loader {
   display: block;
   position: relative;
-  width: 80%;
-  height: 80%;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 8px solid transparent;
+  border: 3px solid transparent;
   border-top-color: #31708e;
   animation: spin 2s linear infinite;
 }
@@ -304,7 +305,7 @@ body {
   right: 5px;
   bottom: 5px;
   border-radius: 50%;
-  border: 8px solid transparent;
+  border: 3px solid transparent;
   border-top-color: #5085a5;
   animation: spin 3s linear infinite;
 }
@@ -316,13 +317,15 @@ body {
   right: 15px;
   bottom: 15px;
   border-radius: 50%;
-  border: 8px solid transparent;
+  border: 3px solid transparent;
   border-top-color: #8fc1e3;
   animation: spin 1.5s linear infinite;
 }
 
 /* Animation 9 */
 .anim9 {
+  width: 200px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,8 +333,8 @@ body {
 
 .pointc1 {
   margin: 0 5px;
-  width: 4rem;
-  height: 4rem;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: black;
   animation: monte 0.3s alternate infinite;
@@ -348,22 +351,22 @@ body {
 
 /* Animation 10 */
 .anim10 {
-  width: 80%;
-  height: 80%;
+  width: 80px;
+  height: 80px;
   position: relative;
 }
 .anim10 div {
-  transform-origin: 16rem 15rem;
+  transform-origin: 40px 40px;
   animation: anim10 1.2s linear infinite;
 }
 .anim10 div::after {
   content: "";
   display: block;
   position: absolute;
-  top: 23rem;
-  left: 50%;
-  width: 1rem;
-  height: 7rem;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
   border-radius: 20%;
   background: #333;
 }
@@ -463,117 +466,14 @@ body {
   animation: movepan 1.2s infinite ease-in-out;
 }
 
-/* Animation 13 */
-.anim13 {
-  width: 20rem;
-  height: 20rem;
-  position: relative;
-}
-.anim13__spin {
-  display: block;
-  position: absolute;
-  margin: 2rem;
-  width: 80%;
-  height: 80%;
-  border-radius: 50%;
-  border: 8px solid transparent;
-  border-top-color: #31708e;
-  animation: spin 2s linear infinite;
-}
-.anim13__spin::before {
-  content: "";
-  position: absolute;
-  top: 0.2rem;
-  left: 0.2rem;
-  right: 0.2rem;
-  bottom: 0.2rem;
-  border-radius: 50%;
-  border: 8px solid transparent;
-  border-top-color: #5085a5;
-  animation: spin 3s linear infinite;
-}
-.anim13__spin::after {
-  content: "";
-  position: absolute;
-  top: 0.9rem;
-  left: 0.9rem;
-  right: 0.9rem;
-  bottom: 0.9rem;
-  border-radius: 50%;
-  border: 8px solid transparent;
-  border-top-color: #8fc1e3;
-  animation: spin 1.5s linear infinite;
-}
-.anim13__flatware {
-  width: 100%;
-  height: 100%;
-}
-.anim13__flatware div {
-  transform-origin: 10rem 10rem;
-  animation: anim10 1.2s linear infinite;
-}
-.anim13__flatware div img {
-  position: absolute;
-  top: 13rem;
-  left: 8rem;
-  height: 4rem;
-  width: 4rem;
-}
-.anim13__flatware div:nth-child(1) {
-  transform: rotate(0);
-  animation-delay: -1.1s;
-}
-.anim13__flatware div:nth-child(2) {
-  transform: rotate(30deg);
-  animation-delay: -1s;
-}
-.anim13__flatware div:nth-child(3) {
-  transform: rotate(60deg);
-  animation-delay: -0.9s;
-}
-.anim13__flatware div:nth-child(4) {
-  transform: rotate(90deg);
-  animation-delay: -0.8s;
-}
-.anim13__flatware div:nth-child(5) {
-  transform: rotate(120deg);
-  animation-delay: -0.7s;
-}
-.anim13__flatware div:nth-child(6) {
-  transform: rotate(150deg);
-  animation-delay: -0.6s;
-}
-.anim13__flatware div:nth-child(7) {
-  transform: rotate(180deg);
-  animation-delay: -0.5s;
-}
-.anim13__flatware div:nth-child(8) {
-  transform: rotate(210deg);
-  animation-delay: -0.4s;
-}
-.anim13__flatware div:nth-child(9) {
-  transform: rotate(240deg);
-  animation-delay: -0.3s;
-}
-.anim13__flatware div:nth-child(10) {
-  transform: rotate(270deg);
-  animation-delay: -0.2s;
-}
-.anim13__flatware div:nth-child(11) {
-  transform: rotate(300deg);
-  animation-delay: -0.1s;
-}
-.anim13__flatware div:nth-child(12) {
-  transform: rotate(330deg);
-  animation-delay: 0s;
-}
-
 .container {
-  max-width: 1920px;
-  min-width: 320px;
-  height: 120vh;
+  width: 1000px;
+  height: 800px;
+  margin-bottom: 200px;
   display: flex;
-  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .loaderFinal {
