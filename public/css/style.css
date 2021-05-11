@@ -589,7 +589,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 3s forwards;
+  animation: fadeOut 5s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
